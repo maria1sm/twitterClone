@@ -1,0 +1,269 @@
+:root{
+    --tw-blue: #1DA1F2;
+    --tw-blue-op: rgb(29, 161, 242, 0.1);
+    --btn-grey-shadow:rgb(255, 255, 255);
+    --white: white;
+    --dark:rgb(56, 68, 77);
+    --rojo: rgb(244, 33, 46);
+    --rojo-op: rgb(244, 33, 46,0.1);
+}
+*{
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    min-height: 100vh;
+}
+
+.tw-name{
+    text-decoration: none !important;
+    color: unset !important;
+}
+.tw-name:hover{
+    text-decoration: underline !important;
+}
+.nav-pills > li > button.active {
+    background-color:transparent !important;
+    /*color: black !important;*/
+}
+.nav-pills > li > button.active > div {
+    background: var(--tw-blue) !important;
+    border-radius: 20px;
+    height: 4px;
+    width: 110%;
+    margin-left: -5%;
+}
+.offcanvas-header p{
+    font-size: 15px;
+}
+.nav-pills > li > button {
+    color: black !important;
+}
+
+#logo{
+    height: 25px;
+    width: 25px;
+}
+.post{
+    background-color: var(--tw-blue);
+    width: 56px;
+    height: 56px;
+}
+
+#svg-post{
+    fill: white;
+    width: 24px;
+    height : 24px;
+}
+button{
+    border: transparent;
+}
+button:hover{
+    filter: brightness(92%);
+}
+.btn-perfil{
+    background-color: var(--tw-blue);
+    font-weight:700 ;
+    border-radius: 200px;
+    min-width: 81px;
+    height : 36px;
+    color: var(--white);
+}
+#unfollow{
+    display: none;
+}
+.btn-unfollow:hover #following{
+    display: none;
+}
+.btn-unfollow:hover #unfollow{
+    display: block;
+    color: var(--rojo);
+}
+.btn-unfollow:hover{
+    background-color: var(--rojo-op) !important;
+    border: 1px solid var(--rojo-op);
+}
+.arrow{
+    width: 20px;
+    height: 20px;   
+}
+.arrow path{
+    width: 14.51px;
+    height: 12.43px;
+}
+#sendTweet{
+    width: 89.75px;
+    height: 32px;
+    font-size: 14px;
+    background-color: var(--tw-blue);
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 200px;
+}
+#editTweet{
+    width: 89.75px;
+    height: 32px;
+    font-size: 14px;
+    background-color: var(--dark);
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 200px;
+}
+.modal-header{
+    height: 53px;
+}
+#texto::placeholder {
+    font-weight: 400;
+    font-size: 21px;
+}
+#editar-perfil label {
+    font-weight: normal;
+    font-size: 14px;
+ 
+}
+#editar-perfil:has(.form-control:focus){
+    color: var(--tw-blue);
+    background-color: transparent;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem var(--tw-blue);
+}
+#editar-perfil .form-control:focus{
+    box-shadow: none;
+}
+#editar-perfil {
+    border: 1px solid var(--dark) !important;
+}
+#modalTweet .form-control:focus {
+    box-shadow: none;
+}
+header div{
+    display: flex;
+    max-width: 800px;
+}
+.section-main{
+    min-height: 100vh;
+    max-width: 600px !important;
+    margin:auto;
+}
+
+#offcanvasNav{
+    max-width: 70%;
+    min-width: 280px;
+    
+}
+
+.btn-nav:hover{
+    background-color: var(--btn-grey-shadow) !important;
+}
+.btn-nav::after{
+    display: none !important;
+}
+.btn-nav svg{
+    width: 18.75px;
+    height: 18.75px;
+    padding: 0;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: start !important;
+    align-items: start !important;
+  
+}
+.dropdown-menu:target{
+    background-color:blue !important;
+}
+.btn-nav:has(.dropdown-menu:focus-visible){
+    color: #0d6efd !important;
+    /*transform: rotate(-180deg);*/
+}
+.btn-nav i{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.btn-nav svg path{
+    width: 13.21px;
+    height: 7.71px;   
+    padding: 0;
+    margin: 0;
+}
+#pincel{
+    margin-left: -18.95px;
+    fill: var(--tw-blue);
+}
+#profile-header{
+    height: 53px;
+}
+#header-picture{
+    width: 100;
+    height: 200px;
+}
+#post-n{
+    font-size: 13px;
+}
+#profile-pic{
+    min-width: 48px;
+    min-height: 48px;
+    width: 25%;
+    height: 25%;
+    background-color: var(--white);
+    border: 5px solid var(--white);
+    margin-top: -13% !important;
+    margin-bottom: 0% !important;
+    position: relative;
+}
+.btn-plus{
+    background-color: transparent!important;
+    margin-top: -5px;
+}
+.btn-plus:hover{
+    background-color: transparent!important;
+}
+.btn-plus div:hover{
+    background-color:  var(--tw-blue-op);
+    border-radius: 200px;
+}
+.btn-plus div:hover path{
+    fill:  var(--tw-blue);
+}
+.btn-plus path{
+    padding: 0.1rem;
+}
+#offcanvasDelete{
+    border-top: 20px;
+}
+
+.sticky-top{
+    background-color: var(--white);
+    top: 0px;
+}
+.arrow-bg{
+    height: 40.04px;
+    width: 40.04px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-tweet{
+    color: var(--rojo);
+    display: flex;
+    align-items: center;
+}
+.delete-tweet svg{
+    fill: var(--rojo);
+    width: 18.75px;
+    height: 18.75px;
+}
+.delete-tweet path{
+    width: 14.06px;
+    height: 15.63px;
+}
+@media (min-width: 600px) {
+    .section-main{
+        border-left: 1px solid rgb(197, 197, 197);
+        border-right: 1px solid rgb(197, 197, 197);
+    }
+}
